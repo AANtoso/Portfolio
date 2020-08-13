@@ -20,6 +20,39 @@ body {
   color: #afafaf;
 }
 
+body div.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body div.bg .col {
+  width: 25%;
+  height: 100%;
+}
+
+body div.bg div.sky-blue {
+  background-color: #00ccff;
+}
+
+body div.bg div.green {
+  background-color: #00bb54;
+}
+
+body div.bg div.red {
+  background-color: #db3d4a;
+}
+
+body div.bg div.yellow {
+  background-color: #ffd000;
+}
+
 body div.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,7 +60,6 @@ body div.wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #333;
   height: 100vh;
   padding: 20px 50px;
 }
@@ -105,6 +137,7 @@ body div.wrapper div.content-wrapper div.main-body {
 
 body div.wrapper div.content-wrapper div.main-body div.channel-col {
   width: 5%;
+  min-width: 50px;
   height: 100%;
   border-bottom-left-radius: 5px;
   padding: 10px 0;
@@ -116,13 +149,63 @@ body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels {
   height: 135px;
 }
 
+body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.user {
+  border-radius: 5px;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.user img {
+  border-radius: 5px;
+}
+
 body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.channel {
   margin: 0 auto;
-  width: 65%;
+  width: 30px;
+  min-width: 30px;
+  max-width: 30px;
   cursor: pointer;
 }
 
 body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.channel:not(:first-child) {
+  margin-top: 15px;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.channel img:hover {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: -webkit-transform .3s linear;
+  transition: -webkit-transform .3s linear;
+  transition: transform .3s linear;
+  transition: transform .3s linear, -webkit-transform .3s linear;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.nav-col {
+  width: 22%;
+  height: 100%;
+  padding: 10px 0;
+  background-color: #1a1820;
+  border-right: 1px solid #3b3b3bbe;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.nav-col ul {
+  height: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.nav-col ul li {
+  border: 1px solid red;
+  height: 33.3%;
+  width: 100%;
   margin-top: 15px;
 }
 
@@ -173,6 +256,7 @@ body div.wrapper div.content-wrapper div.main-body div.conversation-col div.conv
   border-bottom-right-radius: 5px;
   padding: 20px 25px 0 20px;
   position: relative;
+  overflow-y: scroll;
 }
 
 body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper {
@@ -206,10 +290,11 @@ body div.wrapper div.content-wrapper div.main-body div.conversation-col div.conv
 
 body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.message div.message-content {
   line-height: 1.4;
+  padding-right: 30px;
 }
 
 body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-box-wrapper {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
