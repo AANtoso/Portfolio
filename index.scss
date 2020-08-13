@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+$medTransGray:#3b3b3bbe;
+$fontColor: #afafaf;
 
 * {
     padding: 0;
@@ -16,6 +20,7 @@ img {
 
 body {
     font-family: 'Lato', sans-serif;
+    color: $fontColor;
     div.wrapper {
         display: flex;
         align-items: center;
@@ -28,12 +33,15 @@ body {
             max-width: 1200px;
             border-radius: 5px;
             margin: 0 auto;
+            -webkit-box-shadow: 0px 0px 23px 5px rgba(0,0,0,0.55);
+            -moz-box-shadow: 0px 0px 23px 5px rgba(0,0,0,0.55);
+            box-shadow: 0px 0px 23px 5px rgba(0,0,0,0.55);
             div.header {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 border-bottom: 1px solid #333;
-                height: 4.2vh;
+                height: 5.4vh;
                 padding: 0 15px;
                 background-color: #121118;
                 border-top-left-radius: 5px;
@@ -69,7 +77,6 @@ body {
                 }
             }
             div.main-body {
-                border: 1px solid red;
                 height: 85.8vh;
                 border-bottom-left-radius: 5px;
                 border-bottom-right-radius: 5px;
@@ -81,8 +88,10 @@ body {
                     border-bottom-left-radius: 5px;
                     padding: 10px 0;
                     background-color: #1a1820;
+                    border-right: 1px solid $medTransGray;
 
                     ul.channels {
+                        height: 135px;
                         li.channel {
                             margin: 0 auto;
                             width: 65%;
@@ -94,10 +103,107 @@ body {
                         }
                     }
                 }
-                div.nav-col {
-                    width: 22%;
-                    height: 100%;
-                    border: 1px solid green;
+                // div.nav-col {
+                //     width: 22%;
+                //     height: 100%;
+                //     padding: 10px 0;
+                //     background-color: #1a1820;
+                //     ul {
+                //         height: 135px;
+                //         display: flex;
+                //         flex-direction: column;
+                //         align-items: center;
+                //         justify-content: space-around;
+
+                //         li {
+                //             border: 1px solid red;
+                //             height: 33.3%;
+                //             width: 100%;
+                //             margin-top: 15px;
+                //         }
+                    
+                //     }
+                // }
+                div.conversation-col {
+                    width: 95%;
+                    div.convo-header {
+                        height: 8.7vh;
+                        background-color: #1a181f;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 20px;
+                        border-bottom: 1px solid $medTransGray;
+                        div.convo-name {
+                            display: flex;
+                            align-items: center;
+                            div.status {
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 100%;
+                                background-color: green;
+                                margin-right: 5px;
+                            }
+                        }
+                        div.phone {
+                            i {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    div.convo-body {
+                        background-color: #1a181f;
+                        height: 77.1vh;
+                        border-bottom-right-radius: 5px;
+                        padding: 20px 25px 0 20px;
+                        position: relative;
+                        div.message-wrapper {
+                            display: flex;
+                            position: relative;
+                            div.user {
+                                width: 100px;
+                                min-width: 40px;
+                                max-width: 40px;
+                                border-radius: 5px;
+                                
+                                img {
+                                    border-radius: 5px;
+                                }
+                            }
+                            div.message {
+                                color: rgb(221, 221, 221);
+                                margin-left: 10px;
+                                
+                                bottom: 2px;
+                                div.name {
+
+                                    font-weight: bolder;
+                                    margin-bottom: 4px;
+                                }
+                                div.message-content {
+                                    line-height: 1.4;
+                                }
+                            }
+                        }
+                                div.message-box-wrapper {
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 16vh;
+                                    background-color: #1a181f;
+                                    z-index: 100;
+                                    div.message-box {
+                                        border: 1px solid #7c7c7cbe;
+                                        width: 95%;
+                                        height: 12vh;
+                                        margin: 0 auto;
+                                        border-radius: 5px;
+                                        padding: 10px 10px 0 10px;
+                                        background-color: #292929b6;
+                                    }
+                                }
+                    }
                 }
             }
         }

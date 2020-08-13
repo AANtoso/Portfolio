@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -16,6 +17,7 @@ img {
 
 body {
   font-family: 'Lato', sans-serif;
+  color: #afafaf;
 }
 
 body div.wrapper {
@@ -36,6 +38,8 @@ body div.wrapper div.content-wrapper {
   max-width: 1200px;
   border-radius: 5px;
   margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 23px 5px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 23px 5px rgba(0, 0, 0, 0.55);
 }
 
 body div.wrapper div.content-wrapper div.header {
@@ -49,7 +53,7 @@ body div.wrapper div.content-wrapper div.header {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #333;
-  height: 4.2vh;
+  height: 5.4vh;
   padding: 0 15px;
   background-color: #121118;
   border-top-left-radius: 5px;
@@ -91,7 +95,6 @@ body div.wrapper div.content-wrapper div.header div.name {
 }
 
 body div.wrapper div.content-wrapper div.main-body {
-  border: 1px solid red;
   height: 85.8vh;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -106,6 +109,11 @@ body div.wrapper div.content-wrapper div.main-body div.channel-col {
   border-bottom-left-radius: 5px;
   padding: 10px 0;
   background-color: #1a1820;
+  border-right: 1px solid #3b3b3bbe;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels {
+  height: 135px;
 }
 
 body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.channel {
@@ -118,9 +126,105 @@ body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels l
   margin-top: 15px;
 }
 
-body div.wrapper div.content-wrapper div.main-body div.nav-col {
-  width: 22%;
-  height: 100%;
-  border: 1px solid green;
+body div.wrapper div.content-wrapper div.main-body div.conversation-col {
+  width: 95%;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-header {
+  height: 8.7vh;
+  background-color: #1a181f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #3b3b3bbe;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-header div.convo-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-header div.convo-name div.status {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: green;
+  margin-right: 5px;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-header div.phone i {
+  cursor: pointer;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body {
+  background-color: #1a181f;
+  height: 77.1vh;
+  border-bottom-right-radius: 5px;
+  padding: 20px 25px 0 20px;
+  position: relative;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.user {
+  width: 100px;
+  min-width: 40px;
+  max-width: 40px;
+  border-radius: 5px;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.user img {
+  border-radius: 5px;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.message {
+  color: #dddddd;
+  margin-left: 10px;
+  bottom: 2px;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.message div.name {
+  font-weight: bolder;
+  margin-bottom: 4px;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.message div.message-content {
+  line-height: 1.4;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-box-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 16vh;
+  background-color: #1a181f;
+  z-index: 100;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-box-wrapper div.message-box {
+  border: 1px solid #7c7c7cbe;
+  width: 95%;
+  height: 12vh;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 10px 10px 0 10px;
+  background-color: #292929b6;
 }
 /*# sourceMappingURL=index.css.map */
