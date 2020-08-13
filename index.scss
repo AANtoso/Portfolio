@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    div.wrapper {
+        display: flex;
+        align-items: center;
+        border: 1px solid #333;
+        height: 100vh;
+        padding: 20px 50px;
+        div.content-wrapper {
+            height: 90vh;
+            width: 100%;
+            max-width: 1200px;
+            border-radius: 5px;
+            margin: 0 auto;
+            div.header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #333;
+                height: 4.2vh;
+                padding: 0 15px;
+                background-color: #121118;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+        
+                ul.header-btns {
+                    display: flex;
+                    height: 100%;
+
+                    li.btn {
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 100%;
+
+                        &:not(:first-child) {
+                            margin-left: 10px;
+                        }
+                    }
+
+                    li.close {
+                        background-color: #ff3434;
+                    }
+                    li.min {
+                        background-color: #f5f54f;
+                    }
+                    li.enl {
+                        background-color: #61d161;
+                    }
+                }
+                div.name {
+                    color: #fff;
+                    margin: 0 auto;
+                }
+            }
+            div.main-body {
+                border: 1px solid red;
+                height: 85.8vh;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                display: flex;
+                
+                div.channel-col {
+                    width: 5%;
+                    height: 100%;
+                    border-bottom-left-radius: 5px;
+                    padding: 10px 0;
+                    background-color: #1a1820;
+
+                    ul.channels {
+                        li.channel {
+                            margin: 0 auto;
+                            width: 65%;
+                            cursor: pointer;
+
+                            &:not(:first-child) {
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+                div.nav-col {
+                    width: 22%;
+                    height: 100%;
+                    border: 1px solid green;
+                }
+            }
+        }
+    }
+}

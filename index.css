@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+body div.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #333;
+  height: 100vh;
+  padding: 20px 50px;
+}
+
+body div.wrapper div.content-wrapper {
+  height: 90vh;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+body div.wrapper div.content-wrapper div.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #333;
+  height: 4.2vh;
+  padding: 0 15px;
+  background-color: #121118;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+body div.wrapper div.content-wrapper div.header ul.header-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+body div.wrapper div.content-wrapper div.header ul.header-btns li.btn {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+body div.wrapper div.content-wrapper div.header ul.header-btns li.btn:not(:first-child) {
+  margin-left: 10px;
+}
+
+body div.wrapper div.content-wrapper div.header ul.header-btns li.close {
+  background-color: #ff3434;
+}
+
+body div.wrapper div.content-wrapper div.header ul.header-btns li.min {
+  background-color: #f5f54f;
+}
+
+body div.wrapper div.content-wrapper div.header ul.header-btns li.enl {
+  background-color: #61d161;
+}
+
+body div.wrapper div.content-wrapper div.header div.name {
+  color: #fff;
+  margin: 0 auto;
+}
+
+body div.wrapper div.content-wrapper div.main-body {
+  border: 1px solid red;
+  height: 85.8vh;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.channel-col {
+  width: 5%;
+  height: 100%;
+  border-bottom-left-radius: 5px;
+  padding: 10px 0;
+  background-color: #1a1820;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.channel {
+  margin: 0 auto;
+  width: 65%;
+  cursor: pointer;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.channel:not(:first-child) {
+  margin-top: 15px;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.nav-col {
+  width: 22%;
+  height: 100%;
+  border: 1px solid green;
+}
+/*# sourceMappingURL=index.css.map */
