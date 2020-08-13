@@ -1,0 +1,1 @@
+const initMessage = document.querySelector('div.init-message')
