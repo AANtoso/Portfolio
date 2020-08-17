@@ -1,1 +1,2 @@
-const initMessage = document.querySelector('div.init-message')
+// Existing
+const messageCont = document.querySelector('div.message')

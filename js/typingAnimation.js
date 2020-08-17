@@ -1,24 +1,30 @@
-document.addEventListener("DOMContentLoaded", () => {
-    handleInitMessageLoad()
-})
-
-// todo TYPING ANIMATIONS 
-function handleInitMessageLoad() {
-    handleTypingAnimation(initMessage)
+function handleTypingAnimation() {
+    const typing = document.createElement('div')
+    typing.textContent = "typing..."
+    typing.style.fontStyle = "italic"
+    typing.classList.add("animate__animated", "animate__pulse", "animate__infinite")
+    messageCont.appendChild(typing)
     setTimeout(() => {
-        handleEndOfTypingAnimationWithMessage(initMessage, 'animate__pulse', 'animate__fadeInRight', 'animate__infinite', "Hey, welcome to my portfolio!")
-    }, 3000)
+        typing.classList.add('hide-this')
+    }, 2000);
 }
 
-function handleTypingAnimation(element) {
-    element.textContent = 'typing...'
-    element.style.fontStyle = "italic"
-    element.classList.add('animate__pulse', 'animate__infinite')
+function handleMessageCreation(message) {
+    handleTypingAnimation()
+    const speakerAndMessage = document.createElement('div')
+    speakerAndMessage.classList.add('speaker-and-message', 'animate__animated', 'animate__lightSpeedInRight')
+    speakerAndMessage.style.marginBottom = "10px"
+    const messageContent = document.createElement('div')
+    messageContent.classList.add('message-content', 'animate__animated')
+    messageContent.textContent = message
+    speakerAndMessage.append(messageContent)
+    setTimeout(() => {
+        messageCont.appendChild(speakerAndMessage)
+    }, 2000);
 }
 
-function handleEndOfTypingAnimationWithMessage(element, effectToRemove, effectToAdd = null, removeOther = null, message) {
-    element.classList.remove(effectToRemove, removeOther)
-    element.classList.add(effectToAdd)
-    element.textContent = message
-    element.style.fontStyle = "normal"
+function newMessageTimer(message, time) {
+    setTimeout(() => {
+        handleMessageCreation(message)
+    }, time);
 }
