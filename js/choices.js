@@ -74,8 +74,55 @@ function handleProjectsClick() {
             }, 4500);
             setTimeout(() => {
                 handleButtonRender()
-            }, 5000);
+            }, 500);
         }, 3000);
+    })
+}
+
+function handleContactClick(){
+    contactBtn.addEventListener('click', () =>{
+        handleMessageCreation("Absolutely!")
+        setTimeout(() => {
+            buildContact('<i class="fas fa-mobile-alt"></i>', "484-416-5526", "tel:484-416-5526")
+            buildContact('<i class="fas fa-envelope-open-text"></i>', "adjoaan@gmail.com", "mailto:adjoaan@gmail.com")
+            buildContact('<a href=""><i class="fab fa-linkedin"></i></a>', "LinkedIn", "https://www.linkedin.com/in/adjoa-ntoso-b800481aa/")
+            setTimeout(() => {
+                handleButtonRender()
+            }, 500);
+        }, 4000);
+    })
+}
+
+function handleIconClick() {
+    document.addEventListener('click', e =>{
+
+        if (e.target.classList.contains("projects")) {
+            handleMessageCreation("Projects it is!")
+            setTimeout(() => {
+                let message = "So far, I have a total of 5 projects. I've put a lot of work into them and I hope you'll like them!"
+                handleMessageCreation(message)
+                setTimeout(() => {
+                    buildVideo("/videos/CLI Gem PoliceStation_List.mp4", "My CLI Project", "/images/terminal-thumbnail.png")
+                    buildVideo("/videos/Sinatra Project.mp4", "My Sinatra Project", "/images/sinatra-thumbnail.png")
+                    buildVideo("/videos/Rails Project.mp4", "My Rails Project", "/images/rails-thumbnail.png")
+                    buildVideo("/videos/JavaScript & Rails API.mp4", "My Rails/JS Project", '/images/rails-js-thumbnail.jpg')
+                    buildVideo("/videos/React-Redux JS & Rails API Project.mp4", "My React & Redux Project", "/images/react-redux-thumbnail.jpeg")
+                }, 4500);
+                setTimeout(() => {
+                    handleButtonRender()
+                }, 500);
+            }, 3000);
+        } else if (e.target.classList.contains("contact")) {
+            handleMessageCreation("Absolutely!")
+            setTimeout(() => {
+                buildContact('<i class="fas fa-mobile-alt"></i>', "484-416-5526", "tel:484-416-5526")
+                buildContact('<i class="fas fa-envelope-open-text"></i>', "adjoaan@gmail.com", "mailto:adjoaan@gmail.com")
+                buildContact('<a href=""><i class="fab fa-linkedin"></i></a>', "LinkedIn", "https://www.linkedin.com/in/adjoa-ntoso-b800481aa/")
+                setTimeout(() => {
+                    handleButtonRender()
+                }, 500);
+            }, 4000);
+        }
     })
 }
 
@@ -101,6 +148,15 @@ function buildVideo(path, title, image) {
     messageCont.appendChild(vidDiv)
 }
 
-{/* <video width="75%" controls>
-    <source src="/videos/CLI Gem PoliceStation_List.mp4" type="video/mp4">
-</video> */}
+function buildContact(icon, method, linkTo) {
+    const contactCont = document.createElement('div')
+    contactCont.className = "contact-cont"
+    const iconWrap = document.createElement('div')
+    iconWrap.className = "icon-wrap"
+    iconWrap.innerHTML += icon
+    const methodWrap = document.createElement('div')
+    methodWrap.className = "method-wrap"
+    methodWrap.innerHTML += `<a target="_blank" href='${linkTo}'>${method}</a>`
+    contactCont.append(iconWrap, methodWrap)
+    messageCont.appendChild(contactCont)
+}

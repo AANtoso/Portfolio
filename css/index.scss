@@ -18,6 +18,11 @@ img {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: $fontColor;
+}
+
 //! JS STYLING ETC 
 .hide-this {
     display: none;
@@ -251,6 +256,26 @@ body {
                                 div.message-content {
                                     line-height: 1.4;
                                     padding-right: 30px;
+                                }
+                                .contact-cont {
+                                
+                                    border: 1px solid $medTransGray;
+                                    display: flex;
+                                    align-items: center;
+                                    width: 250px;
+                                    .icon-wrap {
+                                        border-right: 1px solid $medTransGray;
+                                        padding: 15px 20px;
+                                        font-size: rem;
+                                    }
+                                    .method-wrap {
+                                        text-align: center;
+                                        width: 100%;
+                                        padding: 0 20px;
+                                    }
+                                    &:not(:first-child) {
+                                        margin: 15px 0;
+                                    }
                                 }
                             }
                         }

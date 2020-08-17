@@ -5,4 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     buttonHover()
     handleAboutClick()
     handleProjectsClick()
+    handleContactClick()
+    handleIconClick()
 })

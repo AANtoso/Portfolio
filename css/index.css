@@ -15,6 +15,11 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: #afafaf;
+}
+
 .hide-this {
   display: none;
 }
@@ -341,6 +346,33 @@ body div.wrapper div.content-wrapper div.main-body div.conversation-col div.conv
 body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.message div.message-content {
   line-height: 1.4;
   padding-right: 30px;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.message .contact-cont {
+  border: 1px solid #3b3b3bbe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.message .contact-cont .icon-wrap {
+  border-right: 1px solid #3b3b3bbe;
+  padding: 15px 20px;
+  font-size: rem;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.message .contact-cont .method-wrap {
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.message .contact-cont:not(:first-child) {
+  margin: 15px 0;
 }
 
 body div.wrapper div.content-wrapper div.main-body div.conversation-col div.message-box-wrapper {
