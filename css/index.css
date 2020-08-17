@@ -19,15 +19,11 @@ img {
   display: none;
 }
 
-.hide-this .hide-this {
-  display: none;
-}
-
-.hide-this .show-this {
+.show-this {
   display: block;
 }
 
-.hide-this div.button-wrapper {
+div.button-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,7 +32,7 @@ img {
   margin: 20px 0;
 }
 
-.hide-this div.button-wrapper button.choice-btn {
+div.button-wrapper button.choice-btn {
   margin-right: 20px;
   font-size: 1rem;
   padding: 15px 30px;
@@ -51,24 +47,24 @@ img {
   margin-bottom: 15px;
 }
 
-.hide-this div.button-wrapper .btn-about {
+div.button-wrapper .btn-about {
   background-color: #00ccff;
 }
 
-.hide-this div.button-wrapper .btn-projects {
+div.button-wrapper .btn-projects {
   background-color: #00bb54;
 }
 
-.hide-this div.button-wrapper .btn-contact {
+div.button-wrapper .btn-contact {
   background-color: #db3d4a;
 }
 
-.hide-this body {
+body {
   font-family: 'Lato', sans-serif;
   color: #afafaf;
 }
 
-.hide-this body div.bg {
+body div.bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -80,28 +76,28 @@ img {
   display: flex;
 }
 
-.hide-this body div.bg .col {
+body div.bg .col {
   width: 25%;
   height: 100%;
 }
 
-.hide-this body div.bg div.sky-blue {
+body div.bg div.sky-blue {
   background-color: #00ccff;
 }
 
-.hide-this body div.bg div.green {
+body div.bg div.green {
   background-color: #00bb54;
 }
 
-.hide-this body div.bg div.red {
+body div.bg div.red {
   background-color: #db3d4a;
 }
 
-.hide-this body div.bg div.yellow {
+body div.bg div.yellow {
   background-color: #ffd000;
 }
 
-.hide-this body div.wrapper {
+body div.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,7 +108,7 @@ img {
   padding: 20px 50px;
 }
 
-.hide-this body div.wrapper div.content-wrapper {
+body div.wrapper div.content-wrapper {
   height: 90vh;
   width: 100%;
   max-width: 1000px;
@@ -122,7 +118,7 @@ img {
   box-shadow: 0px 0px 23px 5px rgba(0, 0, 0, 0.55);
 }
 
-.hide-this body div.wrapper div.content-wrapper div.header {
+body div.wrapper div.content-wrapper div.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,41 +136,41 @@ img {
   border-top-right-radius: 5px;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.header ul.header-btns {
+body div.wrapper div.content-wrapper div.header ul.header-btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.header ul.header-btns li.btn {
+body div.wrapper div.content-wrapper div.header ul.header-btns li.btn {
   width: 15px;
   height: 15px;
   border-radius: 100%;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.header ul.header-btns li.btn:not(:first-child) {
+body div.wrapper div.content-wrapper div.header ul.header-btns li.btn:not(:first-child) {
   margin-left: 10px;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.header ul.header-btns li.close {
+body div.wrapper div.content-wrapper div.header ul.header-btns li.close {
   background-color: #ff3434;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.header ul.header-btns li.min {
+body div.wrapper div.content-wrapper div.header ul.header-btns li.min {
   background-color: #f5f54f;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.header ul.header-btns li.enl {
+body div.wrapper div.content-wrapper div.header ul.header-btns li.enl {
   background-color: #61d161;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.header div.name {
+body div.wrapper div.content-wrapper div.header div.name {
   color: #fff;
   margin: 0 auto;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body {
+body div.wrapper div.content-wrapper div.main-body {
   height: 85.8vh;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -183,7 +179,7 @@ img {
   display: flex;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.channel-col {
+body div.wrapper div.content-wrapper div.main-body div.channel-col {
   width: 5%;
   min-width: 50px;
   height: 100%;
@@ -193,19 +189,19 @@ img {
   border-right: 1px solid #3b3b3bbe;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels {
+body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels {
   height: 135px;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.user {
+body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.user {
   border-radius: 5px;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.user img {
+body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.user img {
   border-radius: 5px;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.channel {
+body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.channel {
   margin: 0 auto;
   width: 30px;
   min-width: 30px;
@@ -213,11 +209,11 @@ img {
   cursor: pointer;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.channel:not(:first-child) {
+body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.channel:not(:first-child) {
   margin-top: 15px;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.channel img:hover {
+body div.wrapper div.content-wrapper div.main-body div.channel-col ul.channels li.channel img:hover {
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
   -webkit-transition: -webkit-transform .3s linear;
@@ -226,7 +222,7 @@ img {
   transition: transform .3s linear, -webkit-transform .3s linear;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.nav-col {
+body div.wrapper div.content-wrapper div.main-body div.nav-col {
   width: 22%;
   height: 100%;
   padding: 10px 0;
@@ -234,7 +230,7 @@ img {
   border-right: 1px solid #3b3b3bbe;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.nav-col ul {
+body div.wrapper div.content-wrapper div.main-body div.nav-col ul {
   height: 135px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,14 +246,14 @@ img {
       justify-content: space-around;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.nav-col ul li {
+body div.wrapper div.content-wrapper div.main-body div.nav-col ul li {
   border: 1px solid red;
   height: 33.3%;
   width: 100%;
   margin-top: 15px;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col {
   width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -268,7 +264,7 @@ img {
           flex-direction: column;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-header {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-header {
   height: 8.7vh;
   background-color: #1a181f;
   display: -webkit-box;
@@ -284,7 +280,7 @@ img {
   border-bottom: 1px solid #3b3b3bbe;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-header div.convo-name {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-header div.convo-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,7 +289,7 @@ img {
           align-items: center;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-header div.convo-name div.status {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-header div.convo-name div.status {
   width: 8px;
   height: 8px;
   border-radius: 100%;
@@ -301,11 +297,11 @@ img {
   margin-right: 5px;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-header div.phone i {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-header div.phone i {
   cursor: pointer;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body {
   background-color: #1a181f;
   height: 77.1vh;
   padding: 20px 25px 20px 20px;
@@ -313,41 +309,41 @@ img {
   overflow-y: scroll;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.user {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.user {
   width: 100px;
   min-width: 40px;
   max-width: 40px;
   border-radius: 5px;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.user img {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.user img {
   border-radius: 5px;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.message {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.message {
   color: #dddddd;
   margin-left: 10px;
   bottom: 2px;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.message div.name {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.message div.name {
   font-weight: bolder;
   margin-bottom: 4px;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.message div.message-content {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.convo-body div.message-wrapper div.message div.message-content {
   line-height: 1.4;
   padding-right: 30px;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.message-box-wrapper {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.message-box-wrapper {
   border-bottom-right-radius: 5px;
   width: 100%;
   height: 11vh;
@@ -355,14 +351,12 @@ img {
   z-index: 100;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.message-box-wrapper div.message-box {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.message-box-wrapper div.message-box {
   border: 1px solid #7c7c7cbe;
   width: 95%;
   height: 6vh;
   margin: 0 auto;
   border-radius: 5px;
-  padding: 10px 10px 0 10px;
-  background-color: #292929b6;
   padding: 10px 15px;
   background-color: #292929b6;
   display: -webkit-box;
@@ -376,17 +370,17 @@ img {
           align-items: center;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.message-box-wrapper div.message-box div.social ul {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.message-box-wrapper div.message-box div.social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.message-box-wrapper div.message-box div.social ul li:not(:last-child) {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.message-box-wrapper div.message-box div.social ul li:not(:last-child) {
   margin-right: 15px;
 }
 
-.hide-this body div.wrapper div.content-wrapper div.main-body div.conversation-col div.message-box-wrapper div.message-box div.social ul li a i {
+body div.wrapper div.content-wrapper div.main-body div.conversation-col div.message-box-wrapper div.message-box div.social ul li a i {
   font-size: 1.2rem;
   color: #afafaf;
 }
