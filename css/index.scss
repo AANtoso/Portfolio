@@ -18,22 +18,17 @@ img {
     width: 100%;
 }
 
-<<<<<<< HEAD:index.scss
 .hide-this {
     display: none;    
-=======
 //! JS STYLING ETC 
 .hide-this {
     display: none;
->>>>>>> 3970e93e86e73a8514af9b8da7336b559560e5b6:css/index.scss
 }
 
 .show-this {
     display: block;
 }
 
-<<<<<<< HEAD:index.scss
-=======
 div.button-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -65,7 +60,6 @@ div.button-wrapper {
 }
 
 //! MAIN STYLING 
->>>>>>> 3970e93e86e73a8514af9b8da7336b559560e5b6:css/index.scss
 body {
     font-family: 'Lato', sans-serif;
     color: $fontColor;
@@ -269,20 +263,15 @@ body {
                         height: 11vh;
                         background-color: #1a181f;
                         z-index: 100;
-<<<<<<< HEAD:index.scss
 
-=======
->>>>>>> 3970e93e86e73a8514af9b8da7336b559560e5b6:css/index.scss
                         div.message-box {
                             border: 1px solid #7c7c7cbe;
                             width: 95%;
                             height: 6vh;
                             margin: 0 auto;
                             border-radius: 5px;
-<<<<<<< HEAD:index.scss
                             padding: 10px 10px 0 10px;
                             background-color: #292929b6;
-=======
                             padding: 10px 15px;
                             background-color: #292929b6;
                             display: flex;
@@ -304,11 +293,11 @@ body {
                                     }
                                 }
                             }
->>>>>>> 3970e93e86e73a8514af9b8da7336b559560e5b6:css/index.scss
                         }
                     }
                 }
             }
         }
+    }
     }
 }
