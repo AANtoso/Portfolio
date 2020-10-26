@@ -335,6 +335,9 @@ body {
                 border-radius: none;
                 margin: 0 auto;
                 box-shadow: none;
+                div.header {
+                    border-radius: 0;
+                }
                 div.main-body {
                     height: 100vh; 
                 }

@@ -433,6 +433,9 @@ body div.wrapper div.content-wrapper div.main-body div.conversation-col div.mess
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+  body div.wrapper div.content-wrapper div.header {
+    border-radius: 0;
+  }
   body div.wrapper div.content-wrapper div.main-body {
     height: 100vh;
   }
