@@ -416,4 +416,25 @@ body div.wrapper div.content-wrapper div.main-body div.conversation-col div.mess
   font-size: 1.2rem;
   color: #afafaf;
 }
+
+@media only screen and (max-width: 700px) {
+  body div.bg {
+    display: none;
+  }
+  body div.wrapper {
+    height: 100vh;
+    padding: 0;
+  }
+  body div.wrapper div.content-wrapper {
+    height: 100%;
+    width: 100%;
+    border-radius: none;
+    margin: 0 auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  body div.wrapper div.content-wrapper div.main-body {
+    height: 100vh;
+  }
+}
 /*# sourceMappingURL=index.css.map */

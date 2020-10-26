@@ -320,3 +320,25 @@ body {
         }
     }
 }
+
+@media only screen and (max-width: 700px) {
+    body {
+        div.bg {
+            display: none;
+        }
+        div.wrapper {
+            height: 100vh;
+            padding: 0;
+            div.content-wrapper {
+                height: 100%;
+                width: 100%;
+                border-radius: none;
+                margin: 0 auto;
+                box-shadow: none;
+                div.main-body {
+                    height: 100vh; 
+                }
+            }
+        }
+    }
+}
