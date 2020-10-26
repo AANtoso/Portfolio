@@ -6,7 +6,7 @@ function handleTypingAnimation() {
     messageCont.appendChild(typing)
     setTimeout(() => {
         typing.classList.add('hide-this')
-    }, 2000);
+    }, 500);
 }
 
 function handleMessageCreation(message) {
@@ -20,7 +20,7 @@ function handleMessageCreation(message) {
     speakerAndMessage.append(messageContent)
     setTimeout(() => {
         messageCont.appendChild(speakerAndMessage)
-    }, 2000);
+    }, 1000);
 }
 
 function newMessageTimer(message, time) {

@@ -14,14 +14,14 @@ buttonWrapper.append(aboutMeBtn, projectsBtn, contactBtn)
 function handleButtonRender() {
     setTimeout(() => {
         messageCont.append(buttonWrapper)
-    }, 7000);
+    }, 4500);
     buttonAnimation()
 }
 
 function buttonAnimation() {
-    setAnimationTime(aboutMeBtn, 'animate__zoomIn', 7000)
-    setAnimationTime(projectsBtn, 'animate__zoomIn', 7100)
-    setAnimationTime(contactBtn, 'animate__zoomIn', 7200)
+    setAnimationTime(aboutMeBtn, 'animate__zoomIn', 5000)
+    setAnimationTime(projectsBtn, 'animate__zoomIn', 5100)
+    setAnimationTime(contactBtn, 'animate__zoomIn', 5200)
 }
 
 function setAnimationTime(element, effect, time) {
@@ -55,7 +55,7 @@ function handleAboutClick() {
             setTimeout(() => {
                 handleButtonRender()
             }, 500);
-        }, 3000);
+        }, 1000);
     })
 }
 
@@ -63,19 +63,15 @@ function handleProjectsClick() {
     projectsBtn.addEventListener('click', () => {
         handleMessageCreation("Projects it is!")
         setTimeout(() => {
-            let message = "So far, I have a total of 5 projects. I've put a lot of work into them and I hope you'll like them!"
-            handleMessageCreation(message)
-            setTimeout(() => {
-                buildVideo("/videos/CLI Gem PoliceStation_List.mp4", "My CLI Project", "/images/terminal-thumbnail.png")
-                buildVideo("/videos/Sinatra Project.mp4", "My Sinatra Project", "/images/sinatra-thumbnail.png")
-                buildVideo("/videos/Rails Project.mp4", "My Rails Project", "/images/rails-thumbnail.png")
-                buildVideo("/videos/JavaScript & Rails API.mp4", "My Rails/JS Project", '/images/rails-js-thumbnail.jpg')
-                buildVideo("/videos/React-Redux JS & Rails API Project.mp4", "My React & Redux Project", "/images/react-redux-thumbnail.jpeg")
-            }, 4500);
-            setTimeout(() => {
-                handleButtonRender()
-            }, 500);
-        }, 3000);
+            buildVideo("./videos/CLI Gem PoliceStation_List.mp4", "My CLI Project", "./images/terminal-thumbnail.png")
+            buildVideo("./videos/Sinatra Project.mp4", "My Sinatra Project", "./images/sinatra-thumbnail.png")
+            buildVideo("./videos/Rails Project.mp4", "My Rails Project", "./images/rails-thumbnail.png")
+            buildVideo("./videos/JavaScript & Rails API.mp4", "My Rails/JS Project", './images/rails-js-thumbnail.jpg')
+            buildVideo("./videos/React-Redux JS & Rails API Project.mp4", "My React & Redux Project", "./images/react-redux-thumbnail.jpeg")
+        }, 2500);
+        setTimeout(() => {
+            handleButtonRender()
+        }, 500);
     })
 }
 
@@ -85,46 +81,47 @@ function handleContactClick(){
         setTimeout(() => {
             buildContact('<i class="fas fa-mobile-alt"></i>', "484-416-5526", "tel:484-416-5526")
             buildContact('<i class="fas fa-envelope-open-text"></i>', "adjoaan@gmail.com", "mailto:adjoaan@gmail.com")
-            buildContact('<a href=""><i class="fab fa-linkedin"></i></a>', "LinkedIn", "https://www.linkedin.com/in/adjoa-ntoso-b800481aa/")
+            buildContact('<a href=""><i class="fab fa-linkedin"></i></a>', "LinkedIn", "https://www.linkedin.com/in/adjoa-ntoso-rn-bsn-ba-b800481aa/")
+            buildContact('<a href=""><i class="fab fa-github-square"></i></a>', "Github", "https://github.com/AANtoso")
             setTimeout(() => {
                 handleButtonRender()
             }, 500);
-        }, 4000);
+        }, 2500);
     })
 }
 
-function handleIconClick() {
-    document.addEventListener('click', e =>{
+// function handleIconClick() {
+//     document.addEventListener('click', e =>{
 
-        if (e.target.classList.contains("projects")) {
-            handleMessageCreation("Projects it is!")
-            setTimeout(() => {
-                let message = "So far, I have a total of 5 projects. I've put a lot of work into them and I hope you'll like them!"
-                handleMessageCreation(message)
-                setTimeout(() => {
-                    buildVideo("/videos/CLI Gem PoliceStation_List.mp4", "My CLI Project", "/images/terminal-thumbnail.png")
-                    buildVideo("/videos/Sinatra Project.mp4", "My Sinatra Project", "/images/sinatra-thumbnail.png")
-                    buildVideo("/videos/Rails Project.mp4", "My Rails Project", "/images/rails-thumbnail.png")
-                    buildVideo("/videos/JavaScript & Rails API.mp4", "My Rails/JS Project", '/images/rails-js-thumbnail.jpg')
-                    buildVideo("/videos/React-Redux JS & Rails API Project.mp4", "My React & Redux Project", "/images/react-redux-thumbnail.jpeg")
-                }, 4500);
-                setTimeout(() => {
-                    handleButtonRender()
-                }, 500);
-            }, 3000);
-        } else if (e.target.classList.contains("contact")) {
-            handleMessageCreation("Absolutely!")
-            setTimeout(() => {
-                buildContact('<i class="fas fa-mobile-alt"></i>', "484-416-5526", "tel:484-416-5526")
-                buildContact('<i class="fas fa-envelope-open-text"></i>', "adjoaan@gmail.com", "mailto:adjoaan@gmail.com")
-                buildContact('<a href=""><i class="fab fa-linkedin"></i></a>', "LinkedIn", "https://www.linkedin.com/in/adjoa-ntoso-b800481aa/")
-                setTimeout(() => {
-                    handleButtonRender()
-                }, 500);
-            }, 4000);
-        }
-    })
-}
+//         if (e.target.classList.contains("projects")) {
+//             handleMessageCreation("Projects it is!")
+//             setTimeout(() => {
+//                 let message = "So far, I have a total of 5 projects. I've put a lot of work into them and I hope you'll like them!"
+//                 handleMessageCreation(message)
+//                 setTimeout(() => {
+//                     buildVideo("/videos/CLI Gem PoliceStation_List.mp4", "My CLI Project", "/images/terminal-thumbnail.png")
+//                     buildVideo("/videos/Sinatra Project.mp4", "My Sinatra Project", "/images/sinatra-thumbnail.png")
+//                     buildVideo("/videos/Rails Project.mp4", "My Rails Project", "/images/rails-thumbnail.png")
+//                     buildVideo("/videos/JavaScript & Rails API.mp4", "My Rails/JS Project", '/images/rails-js-thumbnail.jpg')
+//                     buildVideo("/videos/React-Redux JS & Rails API Project.mp4", "My React & Redux Project", "/images/react-redux-thumbnail.jpeg")
+//                 }, 4500);
+//                 setTimeout(() => {
+//                     handleButtonRender()
+//                 }, 500);
+//             }, 3000);
+//         } else if (e.target.classList.contains("contact")) {
+//             handleMessageCreation("Absolutely!")
+//             setTimeout(() => {
+//                 buildContact('<i class="fas fa-mobile-alt"></i>', "484-416-5526", "tel:484-416-5526")
+//                 buildContact('<i class="fas fa-envelope-open-text"></i>', "adjoaan@gmail.com", "mailto:adjoaan@gmail.com")
+//                 buildContact('<a href=""><i class="fab fa-linkedin"></i></a>', "LinkedIn", "https://www.linkedin.com/in/adjoa-ntoso-b800481aa/")
+//                 setTimeout(() => {
+//                     handleButtonRender()
+//                 }, 500);
+//             }, 4000);
+//         }
+//     })
+// }
 
 function buildVideo(path, title, image) {
     const vidDiv = document.createElement('div')
