@@ -71,7 +71,7 @@ function handleProjectsClick() {
         }, 2500);
         setTimeout(() => {
             handleButtonRender()
-        }, 500);
+        }, 600);
     })
 }
 
